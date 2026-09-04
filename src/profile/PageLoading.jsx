@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 
 const PageLoading = ({ srMessage }) => (
   <div>
-    <div className="d-flex justify-content-center align-items-center flex-column height-50vh">
+    <div className="d-flex justify-content-center align-items-center flex-column"
+      style={{
+        height: '100vh'
+      }}
+    >
       <div className="spinner-border text-primary" role="status">
         {srMessage && <span className="sr-only">{srMessage}</span>}
       </div>
